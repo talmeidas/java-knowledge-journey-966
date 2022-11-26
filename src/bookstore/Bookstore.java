@@ -18,7 +18,7 @@ public class Bookstore {
     private static Inventory<Toys> toys = new Inventory<>(inventoryRecord);
 
     public static void initializeStore() {
-        // Add
+        // Add AlbumMusic
         AlbumMusic albumMusic1 = new AlbumMusic("Lightning Bolt", 100.00, List.of("Pearl Jam"), List.of("Alternative rock","Grunge"), null);
         AlbumMusic albumMusic2 = new AlbumMusic("Everlong", 200.000, List.of("Foo Fighters"), List.of("Alternative rock", "Hard rock", "Post-grunge", "Classic Rock"), null);
         AlbumMusic albumMusic3 = new AlbumMusic("Yellow Submarine", 300.00, List.of("The Beatles"), List.of("Rock"), null);
@@ -26,6 +26,7 @@ public class Bookstore {
         albumMusic.addProduct(albumMusic2);
         albumMusic.addProduct(albumMusic3);
 
+        // Add Book
         Book book1 = new Book("Clean Code", 400.00, List.of("Software","Technology"), "Robert Cecil Martin", "Prentice Hall");
         Book book2 = new Book("Clean Architecture", 500.00, List.of("Software","Technology"), "Robert Cecil Martin", "Prentice Hall");
         Book book3 = new Book("Scrum: The Art of Doing Twice the Work in Half the Time", 600.00, List.of("Agile Methodology","Technology"), "Jeff Sutherland", "Crown Business");
@@ -33,6 +34,7 @@ public class Bookstore {
         book.addProduct(book2);
         book.addProduct(book3);
 
+        // Add Game
         Game game1 = new Game("FIFA 23", 700.00, "Origin", "Sports", "EA Sports");
         Game game2 = new Game("Street Fighter", 800.00, "Capcom", "Fighting", "Capcom");
         Game game3 = new Game("Donkey Kong Country", 900.00, "Nintendo", "Platform", "Rare");
@@ -40,6 +42,7 @@ public class Bookstore {
         game.addProduct(game2);
         game.addProduct(game3);
 
+        // Add Movie
         Movie movie1 = new Movie("Metal Lords", 1000.00, List.of("Peter Sollett"), "Netflix", List.of("Comedy", "Musical"), List.of("Greg Shapiro", "D.B. Weiss"));
         Movie movie2 = new Movie("Yesterday", 1200.00, List.of("Danny Boyle"), "Universal Pictures", List.of("Comedy", "Musical"), List.of("Bernie Bellew", "Tim Bevan", "Danny Boyle", "Richard Curtis", "Eric Fellner", "Matthew James Wilkinson"));
         Movie movie3 = new Movie("Ready Player One", 1200.00, List.of("Steven Spielberg"), "Warner Bros. Pictures", List.of("Science Fiction", "Pop Culture Fiction"), List.of("Donald De Line", "Kristie Macosko Krieger", "Steven Spielberg", "Dan Farah"));
@@ -47,6 +50,7 @@ public class Bookstore {
         movie.addProduct(movie2);
         movie.addProduct(movie3);
 
+        // Add Toys
         Toys toys1 = new Toys("Lego", 1300.00, "Puzzle");
         Toys toys2 = new Toys("Monopoly", 1400.00, "Board");
         Toys toys3 = new Toys("Dominoes", 1500.00, "Board");
